@@ -149,6 +149,56 @@ todo_project/
    - Create a `templates` folder inside `todo_app`
    - Add the provided HTML files (base.html, task_list.html, task_detail.html, task_form.html)
 
+## 📄 Template Files Overview
+
+The project includes four pre-built HTML templates that provide a complete, responsive frontend for your TODO app. Your job is to build the backend that powers these templates.
+
+- **base.html** - Base Template
+The foundation template that all other templates extend from. It includes:
+
+   - Header with app branding and navigation
+   - Navigation bar with links to all tasks and create new task
+   - Message display area for Django messages (success, error, info)
+   - Footer
+   - Common CSS styling with gradient backgrounds and modern UI elements
+   - Reusable button styles and utilities
+
+- **task_list.html** - Display All Tasks
+The main dashboard showing all tasks. Features include:
+
+   - Task statistics dashboard (Total, Pending, Completed)
+   - Filter buttons to show All, Pending, or Completed tasks
+   - Task cards with checkbox for quick completion toggle
+   - Displays task title, description, due date/time, and status badge
+   - Action buttons (View, Edit, Delete) for each task
+   - Empty state message when no tasks exist
+   - JavaScript functionality for filtering and AJAX toggle
+
+- **task_detail.html** - Display Single Task
+A detailed view of a single task. Shows:
+
+   - Complete task information in a card layout
+   - Status indicator (Completed/Pending) with visual badge
+   - Task description with proper formatting
+   - Due date and time in separate metadata cards
+   - Action buttons to mark complete/incomplete, edit, or delete
+   - Back button to return to task list
+
+- **task_form.html** - Create/Update Task Form
+A form for creating new tasks or editing existing ones. Includes:
+
+   - Clean, user-friendly form layout with proper labels
+   - All task fields (title, description, due date, due time)
+   - Required field indicators and optional field labels
+   - Client-side validation with visual feedback
+   - Character counter for title field
+   - Auto-resizing textarea for description
+   - Date picker with minimum date set to today
+   - Checkbox for completion status (only shown when editing)
+   - Form help text and error message display
+   - Cancel button to return without saving
+
+All templates are fully styled with CSS and include JavaScript for enhanced user experience. They use Django template syntax and expect specific URL names and context variables that you'll need to implement in your backend.
 
 ## Resources
 
